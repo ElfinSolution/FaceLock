@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		487584172C3D367E0096A403 /* FaceLockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487584162C3D367E0096A403 /* FaceLockApp.swift */; };
+		487584192C3D367E0096A403 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487584182C3D367E0096A403 /* ContentView.swift */; };
+		4875841B2C3D367F0096A403 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4875841A2C3D367F0096A403 /* Assets.xcassets */; };
+		4875841E2C3D367F0096A403 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4875841D2C3D367F0096A403 /* Preview Assets.xcassets */; };
+		487584292C3D36F60096A403 /* NumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487584282C3D36F60096A403 /* NumberPad.swift */; };
+		4875842B2C3D37200096A403 /* PasscodeIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4875842A2C3D37200096A403 /* PasscodeIndicatorView.swift */; };
+		4875842D2C3D37350096A403 /* LockScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4875842C2C3D37350096A403 /* LockScreenViewModel.swift */; };
+		4875842F2C3D37460096A403 /* LockScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4875842E2C3D37460096A403 /* LockScreen.swift */; };
+		487584312C3D375E0096A403 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487584302C3D375E0096A403 /* Authenticator.swift */; };
+		487584342C3D37830096A403 /* AESEncryptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487584332C3D37830096A403 /* AESEncryptionManager.swift */; };
+		487584362C3D379F0096A403 /* Taks+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487584352C3D379F0096A403 /* Taks+Extension.swift */; };
+		487584382C3D37CE0096A403 /* LAContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487584372C3D37CE0096A403 /* LAContext+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		487584132C3D367E0096A403 /* FaceLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		487584162C3D367E0096A403 /* FaceLockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceLockApp.swift; sourceTree = "<group>"; };
+		487584182C3D367E0096A403 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4875841A2C3D367F0096A403 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4875841D2C3D367F0096A403 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		487584282C3D36F60096A403 /* NumberPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPad.swift; sourceTree = "<group>"; };
+		4875842A2C3D37200096A403 /* PasscodeIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeIndicatorView.swift; sourceTree = "<group>"; };
+		4875842C2C3D37350096A403 /* LockScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenViewModel.swift; sourceTree = "<group>"; };
+		4875842E2C3D37460096A403 /* LockScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreen.swift; sourceTree = "<group>"; };
+		487584302C3D375E0096A403 /* Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		487584332C3D37830096A403 /* AESEncryptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESEncryptionManager.swift; sourceTree = "<group>"; };
+		487584352C3D379F0096A403 /* Taks+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Taks+Extension.swift"; sourceTree = "<group>"; };
+		487584372C3D37CE0096A403 /* LAContext+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LAContext+Extension.swift"; sourceTree = "<group>"; };
+		487584392C3D383C0096A403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		487584102C3D367E0096A403 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4875840A2C3D367E0096A403 = {
+			isa = PBXGroup;
+			children = (
+				487584152C3D367E0096A403 /* FaceLock */,
+				487584142C3D367E0096A403 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		487584142C3D367E0096A403 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				487584132C3D367E0096A403 /* FaceLock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		487584152C3D367E0096A403 /* FaceLock */ = {
+			isa = PBXGroup;
+			children = (
+				487584392C3D383C0096A403 /* Info.plist */,
+				487584242C3D36A80096A403 /* UI */,
+				487584252C3D36B70096A403 /* Data */,
+				487584262C3D36C30096A403 /* Utils */,
+				4875841A2C3D367F0096A403 /* Assets.xcassets */,
+				4875841C2C3D367F0096A403 /* Preview Content */,
+			);
+			path = FaceLock;
+			sourceTree = "<group>";
+		};
+		4875841C2C3D367F0096A403 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4875841D2C3D367F0096A403 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		487584242C3D36A80096A403 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				487584162C3D367E0096A403 /* FaceLockApp.swift */,
+				487584182C3D367E0096A403 /* ContentView.swift */,
+				487584272C3D36DB0096A403 /* LockScreen */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		487584252C3D36B70096A403 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				487584302C3D375E0096A403 /* Authenticator.swift */,
+				487584322C3D37760096A403 /* EncryptionManager */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		487584262C3D36C30096A403 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				487584352C3D379F0096A403 /* Taks+Extension.swift */,
+				487584372C3D37CE0096A403 /* LAContext+Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		487584272C3D36DB0096A403 /* LockScreen */ = {
+			isa = PBXGroup;
+			children = (
+				487584282C3D36F60096A403 /* NumberPad.swift */,
+				4875842A2C3D37200096A403 /* PasscodeIndicatorView.swift */,
+				4875842C2C3D37350096A403 /* LockScreenViewModel.swift */,
+				4875842E2C3D37460096A403 /* LockScreen.swift */,
+			);
+			path = LockScreen;
+			sourceTree = "<group>";
+		};
+		487584322C3D37760096A403 /* EncryptionManager */ = {
+			isa = PBXGroup;
+			children = (
+				487584332C3D37830096A403 /* AESEncryptionManager.swift */,
+			);
+			path = EncryptionManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		487584122C3D367E0096A403 /* FaceLock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 487584212C3D367F0096A403 /* Build configuration list for PBXNativeTarget "FaceLock" */;
+			buildPhases = (
+				4875840F2C3D367E0096A403 /* Sources */,
+				487584102C3D367E0096A403 /* Frameworks */,
+				487584112C3D367E0096A403 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceLock;
+			productName = FaceLock;
+			productReference = 487584132C3D367E0096A403 /* FaceLock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4875840B2C3D367E0096A403 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					487584122C3D367E0096A403 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 4875840E2C3D367E0096A403 /* Build configuration list for PBXProject "FaceLock" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4875840A2C3D367E0096A403;
+			productRefGroup = 487584142C3D367E0096A403 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				487584122C3D367E0096A403 /* FaceLock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		487584112C3D367E0096A403 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4875841E2C3D367F0096A403 /* Preview Assets.xcassets in Resources */,
+				4875841B2C3D367F0096A403 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4875840F2C3D367E0096A403 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				487584382C3D37CE0096A403 /* LAContext+Extension.swift in Sources */,
+				487584192C3D367E0096A403 /* ContentView.swift in Sources */,
+				487584312C3D375E0096A403 /* Authenticator.swift in Sources */,
+				4875842D2C3D37350096A403 /* LockScreenViewModel.swift in Sources */,
+				4875842B2C3D37200096A403 /* PasscodeIndicatorView.swift in Sources */,
+				487584342C3D37830096A403 /* AESEncryptionManager.swift in Sources */,
+				487584172C3D367E0096A403 /* FaceLockApp.swift in Sources */,
+				487584362C3D379F0096A403 /* Taks+Extension.swift in Sources */,
+				4875842F2C3D37460096A403 /* LockScreen.swift in Sources */,
+				487584292C3D36F60096A403 /* NumberPad.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4875841F2C3D367F0096A403 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		487584202C3D367F0096A403 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		487584222C3D367F0096A403 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FaceLock/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FaceLock/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow us to unlock app with FaceID";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.debug.facelock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		487584232C3D367F0096A403 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FaceLock/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FaceLock/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow us to unlock app with FaceID";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.debug.facelock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4875840E2C3D367E0096A403 /* Build configuration list for PBXProject "FaceLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4875841F2C3D367F0096A403 /* Debug */,
+				487584202C3D367F0096A403 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		487584212C3D367F0096A403 /* Build configuration list for PBXNativeTarget "FaceLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				487584222C3D367F0096A403 /* Debug */,
+				487584232C3D367F0096A403 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4875840B2C3D367E0096A403 /* Project object */;
+}
