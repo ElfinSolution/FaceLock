@@ -10,23 +10,26 @@ import SwiftUI
 struct PasscodeView: View {
     
     @State var viewModel: LockScreenViewModel
-
+    
     var body: some View {
-        VStack(spacing: 48){
-            VStack(spacing: 24){
+        
+        VStack(spacing: 48) {
+            
+            VStack(spacing: 24) {
                 Text("Enter Passcode")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
-
+                
                 Text("Please enter your \(viewModel.passcodeLength)-digit pin to securely access your account.")
                     .font(.subheadline)
                     .multilineTextAlignment(.center)
-            } .padding(.top)
-
-            PasscodeIndicatorView(passcode: $viewModel.passcode,
-                                  passcodeLength: viewModel.passcodeLength)
+                
+            }
+            .padding(.top)
+            
+            PasscodeIndicatorView(passcode: $viewModel.passcode, passcodeLength: viewModel.passcodeLength)
             Spacer()
-
+            
             if !viewModel.hideNumberPad {
                 NumberPad(onAdd: viewModel.onAddValue,
                           onRemoveLast: viewModel.onRemoveValue,
@@ -44,8 +47,7 @@ struct PasscodeView: View {
                                     .frame(width: 40)
                             })
                         }
-
-
+                        
                         if viewModel.authenticator.biometryType == .touchID {
                             Button(action: {
                                 viewModel.authenticator.unlockWithFaceId()
@@ -57,10 +59,10 @@ struct PasscodeView: View {
                             })
                         }
                     }
-
+                    
                     Button {
                         viewModel.showNumPad()
-                    } label:{
+                    } label: {
                         Image(systemName: "keyboard")
                             .font(.title)
                             .padding(.vertical,16)

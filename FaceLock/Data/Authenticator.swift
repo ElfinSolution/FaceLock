@@ -36,7 +36,6 @@ import LocalAuthentication
         }
     }
 
-
     func logOut() {
         isAuthenticated = false
         resetFailCount()
@@ -62,8 +61,6 @@ import LocalAuthentication
         isLoading = true
         var error: NSError?
 
-
-
         // check whether biometric authentication is possible
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
             // it's possible, so go ahead and use it
@@ -85,7 +82,6 @@ import LocalAuthentication
                 self.isLoading = false
             }
         } else {
-
             if let error = error {
                 handleLaError(error: error)
             } else {

@@ -27,19 +27,15 @@ struct ContentView: View {
                                 isSuccessDialogHidden = true
                             }
                         }
-
                     Text("Hey DK Good to see you!")
-
                     Button("Log Out") {
                         authenticator.logOut()
                     }
-
                     Button("Reset") {
                         authenticator.onResetPin()
                     }
                 }
-            }
-            else{
+            } else {
                 PasscodeView(viewModel: LockScreenViewModel(authenticator: authenticator))
             }
         }

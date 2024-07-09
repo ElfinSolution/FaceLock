@@ -11,11 +11,11 @@ struct NumberPad: View {
     let onAdd: (_ value: Int) -> Void
     let onRemoveLast: () -> Void
     let onDissmis: () -> Void
-
+    
     private let columns: [GridItem] = Array(repeating: .init(), count: 3)
-
+    
     var body: some View {
-        LazyVGrid(columns: columns){
+        LazyVGrid(columns: columns) {
             ForEach(1 ... 9, id: \.self){ index in
                 Button {
                     onAdd(index)
@@ -40,7 +40,7 @@ struct NumberPad: View {
                 onAdd(0)
             } label:{
                 Text("0")
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .font(.title)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical,16)
                     .contentShape(.rect)
